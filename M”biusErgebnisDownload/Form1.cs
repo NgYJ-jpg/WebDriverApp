@@ -88,7 +88,6 @@ namespace MöbiusErgebnisDownload
             if (gesamtlisteVorhanden && b_StartWebBrowser.Enabled)
             {
                 b_Download.Enabled = true;
-                this.TopMost = true; ;
             }
 
 
@@ -165,15 +164,18 @@ namespace MöbiusErgebnisDownload
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0.5);
 
             int counter = 0;
+
             while (n > 0) {
                 n--;
                 IList<IWebElement> elements = driver.FindElement(By.CssSelector("table[class*='gradientTable']")).FindElements(By.CssSelector("tr[class*='dataRow']"));
 
+                
+
                 foreach (IWebElement element in elements)
                 {
-                    string name = element.FindElement(By.CssSelector("a[class*='block userLink']")).Text;
+                    string name = element.FindElement(By.CssSelector("a[class*='block userLink']")).GetAttribute("href").Split('\'')[3];
                     if (usedKeys.ContainsKey(name)) { continue; }
-                    usedKeys.Add(element.FindElement(By.CssSelector("a[class*='block userLink']")).Text, 1);
+                    usedKeys.Add(name, 1);
 
                     try
                     {
@@ -337,6 +339,7 @@ namespace MöbiusErgebnisDownload
                 if (gesamtlisteVorhanden)
                 {
                     b_StartWebBrowser.Enabled = true;
+                    Merge.Enabled = true;
                     this.TopMost = true; ;
                 }
 

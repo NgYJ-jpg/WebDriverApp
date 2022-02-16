@@ -69,6 +69,7 @@
             this.b_StartWebBrowser.TabIndex = 2;
             this.b_StartWebBrowser.Text = "Webbrowser";
             this.b_StartWebBrowser.UseVisualStyleBackColor = true;
+            this.b_StartWebBrowser.Enabled = false;
             this.b_StartWebBrowser.Click += new System.EventHandler(this.B_StartWebBrowser_Click);
             // 
             // b_Download
@@ -79,6 +80,7 @@
             this.b_Download.TabIndex = 3;
             this.b_Download.Text = "Download";
             this.b_Download.UseVisualStyleBackColor = true;
+            this.b_Download.Enabled = false;
             this.b_Download.Click += new System.EventHandler(this.Download_Click);
             // 
             // tB_Status
@@ -97,6 +99,7 @@
             this.Merge.Size = new System.Drawing.Size(75, 23);
             this.Merge.TabIndex = 5;
             this.Merge.Text = "Merge CSV";
+            this.Merge.Enabled = false;
             this.Merge.Click += new System.EventHandler(this.ValidateFileType);
 
             // 
@@ -112,7 +115,7 @@
             this.Controls.Add(this.b_Users);
             this.Controls.Add(this.tB_Teilnehmer);
             this.Name = "MobiusDownladExams";
-            this.Text = "Möbius Prüfungen herunterladen.";
+            this.Text = "Möbius CSV automation tool";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MobiusDownladExams_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
