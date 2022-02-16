@@ -281,7 +281,7 @@ namespace MöbiusErgebnisDownload
 
             if (csvList.Count == 0)
             {
-                MessageBox.Show("No csv files found in the targetted folder. Please try again with a valid directory.");
+                MessageBox.Show("フォルダーにCSVファイルがありません。ファイルパス変更して改めてやり直してください。");
                 return;
             }
 
@@ -291,7 +291,7 @@ namespace MöbiusErgebnisDownload
                 Debug.WriteLine(firstLine);
 
                 File.WriteAllText(resPath, " ");
-                tB_Status.Text = "Merging into result.csv ...";
+                tB_Status.Text = "result.csv にマージする ...";
                 tB_Status.Refresh();
 
                 StreamWriter result = new StreamWriter(resPath);
@@ -307,12 +307,12 @@ namespace MöbiusErgebnisDownload
                     }
                 }
                 result.Close();
-                tB_Status.Text = "Merge complete.";
+                tB_Status.Text = "マージ完成。";
                 tB_Status.Refresh();
             }
             else {
                 Debug.WriteLine("Deleting File.");
-                tB_Status.Text = "Existing result.csv found. Deleting ...";
+                tB_Status.Text = "result.csv もう存在します。例のファイルを削除します ...";
                 tB_Status.Refresh();
                 Task t = Task.Run( () => {
                     
