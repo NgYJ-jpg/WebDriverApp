@@ -161,15 +161,13 @@ namespace MöbiusErgebnisDownload
         {
             int n =  driver.FindElement(By.CssSelector("table[class*='gradientTable']")).FindElements(By.CssSelector("tr[class*='dataRow']")).Count();
             IDictionary<string, int> usedKeys = new Dictionary<string, int>();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0.5);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0);
 
             int counter = 0;
 
             while (n > 0) {
                 n--;
                 IList<IWebElement> elements = driver.FindElement(By.CssSelector("table[class*='gradientTable']")).FindElements(By.CssSelector("tr[class*='dataRow']"));
-
-                
 
                 foreach (IWebElement element in elements)
                 {
