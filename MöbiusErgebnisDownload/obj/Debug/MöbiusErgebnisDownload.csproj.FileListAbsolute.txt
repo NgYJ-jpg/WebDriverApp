@@ -1,0 +1,224 @@
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\chromedriver.exe
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe.config
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe.manifest
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.application
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Common.Logging.Core.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Common.Logging.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.barcodes.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.commons.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.forms.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.io.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.kernel.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.layout.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.pdfa.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.sign.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.styledxmlparser.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.svg.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Buffers.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Memory.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.ValueTuple.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\WebDriver.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\WebDriver.Support.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Common.Logging.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Common.Logging.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Common.Logging.Core.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Common.Logging.Core.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.barcodes.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.commons.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.forms.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.io.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.kernel.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.layout.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.pdfa.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.sign.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.styledxmlparser.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\itext.svg.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Buffers.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Memory.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\System.ValueTuple.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\bin\Debug\WebDriver.Support.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.AssemblyReference.cache
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.MobiusDownladExams.resources
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.Properties.Resources.resources
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.GenerateResource.cache
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CoreCompileInputs.cache
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe.manifest
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.application
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CopyComplete
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\chromedriver.exe
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe.config
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe.manifest
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.application
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Common.Logging.Core.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Common.Logging.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.barcodes.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.commons.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.forms.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.io.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.kernel.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.layout.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.pdfa.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.sign.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.styledxmlparser.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.svg.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Buffers.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Memory.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.ValueTuple.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\WebDriver.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\WebDriver.Support.dll
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Common.Logging.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Common.Logging.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Common.Logging.Core.pdb
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Common.Logging.Core.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.barcodes.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.commons.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.forms.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.io.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.kernel.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.layout.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.pdfa.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.sign.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.styledxmlparser.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\itext.svg.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Buffers.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Memory.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\System.ValueTuple.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\bin\Debug\WebDriver.Support.xml
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.AssemblyReference.cache
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.MobiusDownladExams.resources
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.Properties.Resources.resources
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.GenerateResource.cache
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CoreCompileInputs.cache
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe.manifest
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.application
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe
+C:\Users\founder4116\Documents\M”biusErgebnisDownload - DigitalEd 2\M”biusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.pdb
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\chromedriver.exe
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe.config
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe.manifest
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.application
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.exe
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\MöbiusErgebnisDownload.pdb
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Common.Logging.Core.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Common.Logging.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.barcodes.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.commons.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.forms.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.io.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.kernel.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.layout.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.pdfa.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.sign.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.styledxmlparser.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.svg.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Buffers.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Memory.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.ValueTuple.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\WebDriver.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\WebDriver.Support.dll
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Common.Logging.pdb
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Common.Logging.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Common.Logging.Core.pdb
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Common.Logging.Core.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.barcodes.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.commons.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.forms.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.io.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.kernel.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.layout.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.pdfa.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.sign.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.styledxmlparser.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\itext.svg.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Buffers.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Memory.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\System.ValueTuple.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\bin\Debug\WebDriver.Support.xml
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.AssemblyReference.cache
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.MobiusDownladExams.resources
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.Properties.Resources.resources
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.GenerateResource.cache
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CoreCompileInputs.cache
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe.manifest
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.application
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CopyComplete
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe
+C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.pdb
