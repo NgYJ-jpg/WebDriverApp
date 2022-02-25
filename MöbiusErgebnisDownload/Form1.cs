@@ -232,7 +232,11 @@ namespace MöbiusErgebnisDownload
             }
             catch
             {
-                throw new ArgumentException("Couldn't click on desired element error. Error at ClickCycle. ", nameof(element));
+                tB_Status.Text = "実行が失敗しました。もう一回やり直してください。";
+                tB_Status.Refresh();
+                return; 
+                
+                // throw new ArgumentException("Couldn't click on desired element error. Error at ClickCycle.", nameof(element));
             }
         }
 
