@@ -19,15 +19,18 @@ using iText.IO;
 using iText.Layout.Element;
 using iText.Layout.Properties;
 using iText.Kernel.Pdf.Canvas.Draw;
+using System.Text.RegularExpressions;
 
 namespace MöbiusErgebnisDownload
 {
     public partial class MobiusDownladExams : Form
     {
         public int i_sortname, i_mtknr;
-        public bool gesamtlisteVorhanden = false, pdfVorhanden = false, pdfOpen = false;
+        public bool gesamtlisteVorhanden = false, driverOpen = false;
         public string[] lines;
         public ChromeDriver driver;
+        public IDictionary<string, string> NameClassDict;
+        public string reportName = "null";
         public MobiusDownladExams()
         {
             InitializeComponent();
@@ -88,6 +91,7 @@ namespace MöbiusErgebnisDownload
             if (gesamtlisteVorhanden && b_StartWebBrowser.Enabled)
             {
                 b_Download.Enabled = true;
+                driverOpen = true;
             }
 
 
@@ -95,16 +99,12 @@ namespace MöbiusErgebnisDownload
 
         private void MobiusDownladExams_FormClosing(object sender, FormClosingEventArgs e)
         {
-            try
-            {
+            if (driverOpen) {
                 driver.Close();
                 driver.Dispose();
             }
-            catch
-            {
-                return;
-            }
-            
+
+            return; 
         }
 
         // Below block not used anymore: Previous rendition of the download click 
@@ -146,7 +146,9 @@ namespace MöbiusErgebnisDownload
                     Debug.WriteLine("Element has no grade.");
                 }
 
-            }   
+            }
+
+            
             //foreach (string id in userIds)
             //{
                 
@@ -160,8 +162,9 @@ namespace MöbiusErgebnisDownload
         private void Download_Click(object sender, EventArgs e)
         {
             int n =  driver.FindElement(By.CssSelector("table[class*='gradientTable']")).FindElements(By.CssSelector("tr[class*='dataRow']")).Count();
-            IDictionary<string, int> usedKeys = new Dictionary<string, int>();
+            IDictionary<string, string> usedKeys = new Dictionary<string, string>();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(0);
+            reportName = driver.FindElement(By.CssSelector("table[class*='gradientTable']")).FindElement(By.CssSelector("a[class*='asgnHeader']")).GetAttribute("title");
 
             int counter = 0;
 
@@ -171,9 +174,11 @@ namespace MöbiusErgebnisDownload
 
                 foreach (IWebElement element in elements)
                 {
-                    string name = element.FindElement(By.CssSelector("a[class*='block userLink']")).GetAttribute("href").Split('\'')[3];
+                    string name = element.FindElement(By.CssSelector("a[class*='block userLink']")).Text;
+                    // GetAttribute("href").Split('\'')[3]
+                    string className = element.FindElement(By.CssSelector("span[class*='className']")).Text;
                     if (usedKeys.ContainsKey(name)) { continue; }
-                    usedKeys.Add(name, 1);
+                    usedKeys.Add(name, className);
 
                     try
                     {
@@ -204,6 +209,8 @@ namespace MöbiusErgebnisDownload
             }
             tB_Status.Text = "Download complete. ";
             tB_Status.Refresh();
+
+            NameClassDict = usedKeys;
         }
 
         private void ClickCycle(IWebElement element)
@@ -214,9 +221,12 @@ namespace MöbiusErgebnisDownload
                 element.Click();
                 return;
             }
+#pragma warning disable CS0168 // The variable 'e' is declared but never used
             catch (ElementClickInterceptedException e)
+#pragma warning restore CS0168 // The variable 'e' is declared but never used
             {
                 IJavaScriptExecutor jsDriver = driver as IJavaScriptExecutor;
+                Debug.WriteLine(e.Message);
                 jsDriver.ExecuteScript("arguments[0].scrollIntoView(true);", element);
                 ClickCycle(element);
             }
@@ -233,7 +243,7 @@ namespace MöbiusErgebnisDownload
             // string userId = gradeId.Split(';')[0];
             // string gradeUrl = gradeId.Split(';')[1];
             Thread.Sleep(500);
-                // driver.Navigate().GoToUrl(gradeUrl);
+            // driver.Navigate().GoToUrl(gradeUrl);
             try { 
                 driver.ExecuteScript("refresh('csv')");
                 Debug.WriteLine("downloaded");
@@ -287,23 +297,30 @@ namespace MöbiusErgebnisDownload
 
             if (!File.Exists(resPath))
             {
-                string firstLine = File.ReadLines(csvList[0]).First();
+                string firstLine = File.ReadLines(csvList[0], Encoding.UTF8).First();
                 Debug.WriteLine(firstLine);
 
                 File.WriteAllText(resPath, " ");
                 tB_Status.Text = "result.csv にマージする ...";
                 tB_Status.Refresh();
 
-                StreamWriter result = new StreamWriter(resPath);
-                result.WriteLine(firstLine);
+                StreamWriter result = new StreamWriter(resPath, false, Encoding.UTF8);
+                result.WriteLine(String.Format("クラスID, レポートID, {0}", firstLine.Substring(3)));
                 foreach (string item in csvList){
                     Debug.WriteLine(item);
                     lines = File.ReadAllLines(item);
 
                     lines = lines.Skip(1).ToArray();
 
+                    string className = "null";
+                    string studentID = lines[0].Substring(3).Split(',')[0];
+                    if (lines.Length > 0 && NameClassDict.ContainsKey(studentID))
+                    {
+                        className = NameClassDict[lines[0].Split(',')[1]];
+                    }
+
                     foreach (string line in lines){
-                        result.WriteLine(line);
+                        result.WriteLine(String.Format("{0}, {1}, {2}", reportName, className, line.Substring(3)));
                     }
                 }
                 result.Close();

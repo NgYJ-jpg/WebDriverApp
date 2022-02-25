@@ -53,7 +53,7 @@
             // 
             this.b_Users.Location = new System.Drawing.Point(691, 86);
             this.b_Users.Name = "b_Users";
-            this.b_Users.Size = new System.Drawing.Size(75, 23);
+            this.b_Users.Size = new System.Drawing.Size(90, 23);
             this.b_Users.TabIndex = 1;
             this.b_Users.Text = "フォルダー選択";
             this.b_Users.UseVisualStyleBackColor = true;
@@ -68,7 +68,7 @@
             // 
             this.b_StartWebBrowser.Location = new System.Drawing.Point(691, 132);
             this.b_StartWebBrowser.Name = "b_StartWebBrowser";
-            this.b_StartWebBrowser.Size = new System.Drawing.Size(75, 23);
+            this.b_StartWebBrowser.Size = new System.Drawing.Size(90, 23);
             this.b_StartWebBrowser.TabIndex = 2;
             this.b_StartWebBrowser.Text = "ブラウザー開く";
             this.b_StartWebBrowser.UseVisualStyleBackColor = true;
@@ -79,7 +79,7 @@
             // 
             this.b_Download.Location = new System.Drawing.Point(691, 177);
             this.b_Download.Name = "b_Download";
-            this.b_Download.Size = new System.Drawing.Size(75, 23);
+            this.b_Download.Size = new System.Drawing.Size(90, 23);
             this.b_Download.TabIndex = 3;
             this.b_Download.Text = "ダウンロード";
             this.b_Download.UseVisualStyleBackColor = true;
@@ -106,7 +106,7 @@
             this.Merge.AutoSize = true;
             this.Merge.Location = new System.Drawing.Point(691, 233);
             this.Merge.Name = "label1";
-            this.Merge.Size = new System.Drawing.Size(75, 23);
+            this.Merge.Size = new System.Drawing.Size(90, 23);
             this.Merge.TabIndex = 5;
             this.Merge.Text = "CSVをマージ";
             this.Merge.Enabled = false;
