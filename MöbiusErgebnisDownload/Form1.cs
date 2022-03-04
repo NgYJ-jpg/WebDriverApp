@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Edge;
 using System.Diagnostics;
 using iText.Kernel.Pdf;
 using iText.Layout;
@@ -20,6 +21,10 @@ using iText.Layout.Element;
 using iText.Layout.Properties;
 using iText.Kernel.Pdf.Canvas.Draw;
 using System.Text.RegularExpressions;
+using OpenQA.Selenium.DevTools.V96.Network;
+using WebDriverManager;
+using WebDriverManager.DriverConfigs.Impl;
+using Microsoft.Win32;
 
 namespace MöbiusErgebnisDownload
 {
@@ -28,29 +33,87 @@ namespace MöbiusErgebnisDownload
         public int i_sortname, i_mtknr;
         public bool gesamtlisteVorhanden = false, driverOpen = false;
         public string[] lines;
-        public ChromeDriver driver;
         public IDictionary<string, string> NameClassDict;
         public string reportName = "null";
+        public WebDriver driver;
         public MobiusDownladExams()
         {
             InitializeComponent();
         }
 
+
+        private string GetDefaultBrowser()
+        {
+            const string userChoice = @"Software\Microsoft\Windows\Shell\Associations\UrlAssociations\http\UserChoice";
+            string progId;
+
+            RegistryKey userChoiceKey = Registry.CurrentUser.OpenSubKey(userChoice);
+
+            if (userChoiceKey.GetValue("ProgID") == null)
+            {
+                return null;
+            }
+
+            progId = userChoiceKey.GetValue("ProgID").ToString().ToLower();
+
+            switch (progId)
+            {
+                case var s when progId.Contains("chromehtml"):
+                    return "chrome";
+                default:
+                    return null;
+            }
+                
+        }
+
+        private void SetupDrivers()
+        {
+            string browserChoice = GetDefaultBrowser();
+            var downloadDirectory = oFD_Teilnehmer.SelectedPath;
+
+            switch (browserChoice)
+            {
+                case "chrome":
+                    new DriverManager().SetUpDriver(new ChromeConfig());
+
+                    var chromeOptions = new ChromeOptions();
+                    
+                    chromeOptions.AddArguments("--browser.download.folderList=2");
+                    chromeOptions.AddArguments("--browser.helperApps.neverAsk.saveToDisk=text/csv");
+                    chromeOptions.AddArguments("--browser.download.dir=" + downloadDirectory);
+                    chromeOptions.AddUserProfilePreference("profile.default_content_settings.popups", 0);
+                    chromeOptions.AddUserProfilePreference("download.prompt_for_download", "false");
+                    chromeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
+                    chromeOptions.AddUserProfilePreference("plugins.plugins_disabled", new[] { "Chrome PDF Viewer" });
+                    driver = new ChromeDriver(chromeOptions);
+
+                    break;
+
+                default:
+                    new DriverManager().SetUpDriver(new EdgeConfig());
+
+                    var edgeOptions = new EdgeOptions();
+
+                    edgeOptions.AddArguments("--browser.download.folderList=2");
+                    edgeOptions.AddArguments("--browser.helperApps.neverAsk.saveToDisk=text/csv");
+                    edgeOptions.AddArguments("--browser.download.dir=" + downloadDirectory);
+                    edgeOptions.AddUserProfilePreference("profile.default_content_settings.popups", 0);
+                    edgeOptions.AddUserProfilePreference("download.prompt_for_download", "false");
+                    edgeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
+                    driver = new EdgeDriver(edgeOptions);
+
+                    break;
+            }
+
+            return;
+        }
+
+
+
         private void B_StartWebBrowser_Click(object sender, EventArgs e)
         {
-            var chromeOptions = new ChromeOptions();
-            var downloadDirectory = oFD_Teilnehmer.SelectedPath;
-            chromeOptions.AddArguments("--browser.download.folderList=2");
-            chromeOptions.AddArguments("--browser.helperApps.neverAsk.saveToDisk=text/csv");
-            chromeOptions.AddArguments("--browser.download.dir=" + downloadDirectory);
+            SetupDrivers();
 
-            chromeOptions.AddUserProfilePreference("profile.default_content_settings.popups", 0);
-            chromeOptions.AddUserProfilePreference("download.prompt_for_download", "false");
-            chromeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
-            chromeOptions.AddUserProfilePreference("plugins.plugins_disabled", new[] { "Chrome PDF Viewer" });
-
-
-            driver = new ChromeDriver(chromeOptions);
             driver.Manage().Window.Position = new System.Drawing.Point(50, 50);
             driver.Manage().Window.Size = new System.Drawing.Size(1080*4/3, 1 * 1080);
             //driver.Manage().Window.Maximize();
@@ -104,10 +167,10 @@ namespace MöbiusErgebnisDownload
                 driver.Dispose();
             }
 
-            return; 
+            return;
         }
 
-        // Below block not used anymore: Previous rendition of the download click 
+        // Below block not used anymore: Previous rendition of the download click
         private void b_Download_Click(object sender, EventArgs e)
         {
             IList<IWebElement> elements = driver.FindElement(By.CssSelector("table[class*='gradientTable']")).FindElements(By.CssSelector("tr[class*='dataRow']"));
@@ -122,7 +185,7 @@ namespace MöbiusErgebnisDownload
                     tB_Teilnehmer.Refresh();
                 }
             }
-            
+
             var i = 0;
             int counter = 0;
             foreach (IWebElement element in elements)
@@ -132,26 +195,26 @@ namespace MöbiusErgebnisDownload
                     counter++;
                     tB_Status.Text = "Bearbeite  Datensatz " + counter + " von " + userIds.Count;
                     tB_Status.Refresh();
-                    // string text = "https:/evaluation.mobius.cloud/gradebook/Details.do?" + 
+                    // string text = "https:/evaluation.mobius.cloud/gradebook/Details.do?" +
                     element.FindElement(By.CssSelector("a[class='grade']")).Click();
                     //.GetAttribute("href").Split('\'')[3];
                     // userIds.Add(element.FindElement(By.CssSelector("td[class*='top userInfo']")).Text + ";" + text);
                     Download("dummy");
-                    
+
 
                     Thread.Sleep(500);
                     Debug.WriteLine("found ", userIds[i]);
                 }
-                catch {                
+                catch {
                     Debug.WriteLine("Element has no grade.");
                 }
 
             }
 
-            
+
             //foreach (string id in userIds)
             //{
-                
+
             //}
 
         }
@@ -185,16 +248,16 @@ namespace MöbiusErgebnisDownload
                         counter++;
                         tB_Status.Text = "Downloading - " + counter + "/" + elements.Count();
                         tB_Status.Refresh();
-                        // string text = "https:/evaluation.mobius.cloud/gradebook/Details.do?" + 
+                        // string text = "https:/evaluation.mobius.cloud/gradebook/Details.do?" +
                         IWebElement aLink = element.FindElement(By.CssSelector("a[class='grade']"));
-                        
+
                         ClickCycle(aLink);
                         //.GetAttribute("href").Split('\'')[3];
                         // userIds.Add(element.FindElement(By.CssSelector("td[class*='top userInfo']")).Text + ";" + text);
-                        
+
                         Download("dummy");
-                        
-                        
+
+
                         Thread.Sleep(20);
                         Debug.WriteLine("Back");
                         driver.Navigate().Back();
@@ -234,8 +297,8 @@ namespace MöbiusErgebnisDownload
             {
                 tB_Status.Text = "実行が失敗しました。もう一回やり直してください。";
                 tB_Status.Refresh();
-                return; 
-                
+                return;
+
                 // throw new ArgumentException("Couldn't click on desired element error. Error at ClickCycle.", nameof(element));
             }
         }
@@ -248,7 +311,7 @@ namespace MöbiusErgebnisDownload
             // string gradeUrl = gradeId.Split(';')[1];
             Thread.Sleep(500);
             // driver.Navigate().GoToUrl(gradeUrl);
-            try { 
+            try {
                 driver.ExecuteScript("refresh('csv')");
                 Debug.WriteLine("downloaded");
             }
@@ -336,18 +399,18 @@ namespace MöbiusErgebnisDownload
                 tB_Status.Text = "result.csv もう存在します。例のファイルを削除します ...";
                 tB_Status.Refresh();
                 Task t = Task.Run( () => {
-                    
+
                     File.Delete(resPath);
 
                     });
 
                 t.Wait();
                 MergeCSV(Directory.GetFiles(oFD_Teilnehmer.SelectedPath, "*.csv").ToList());
-                
+
             }
         }
 
-  
+
 
         private void B_Users_Click(object sender, EventArgs e)
         {
