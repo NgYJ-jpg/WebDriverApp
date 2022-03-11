@@ -25,6 +25,7 @@ using OpenQA.Selenium.DevTools.V96.Network;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
 using Microsoft.Win32;
+using WebDriverManager.Helpers;
 
 namespace MöbiusErgebnisDownload
 {
@@ -35,12 +36,13 @@ namespace MöbiusErgebnisDownload
         public string[] lines;
         public IDictionary<string, string> NameClassDict;
         public string reportName = "null";
+        public string DriverPath; 
         public WebDriver driver;
+
         public MobiusDownladExams()
         {
             InitializeComponent();
         }
-
 
         private string GetDefaultBrowser()
         {
@@ -60,10 +62,11 @@ namespace MöbiusErgebnisDownload
             {
                 case var s when progId.Contains("chromehtml"):
                     return "chrome";
+                //case var s when progId.Contains("firefox"):
+                //    return "firefox";
                 default:
                     return null;
-            }
-                
+            }  
         }
 
         private void SetupDrivers()
@@ -71,13 +74,36 @@ namespace MöbiusErgebnisDownload
             string browserChoice = GetDefaultBrowser();
             var downloadDirectory = oFD_Teilnehmer.SelectedPath;
 
+            tB_Teilnehmer.Text = "setting up...";
+            tB_Teilnehmer.Refresh();
+
+            //var oldval = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Machine);
+
             switch (browserChoice)
             {
                 case "chrome":
-                    new DriverManager().SetUpDriver(new ChromeConfig());
+                    var cconfig = new ChromeConfig();
+
+
+                    //Thread.Sleep(10000);
+                    //new DriverManager().SetUpDriver("www.google.com", )
+
+                    DriverPath = $"{Directory.GetCurrentDirectory()}\\{cconfig.GetName()}\\{cconfig.GetMatchingBrowserVersion()}\\{ArchitectureHelper.GetArchitecture()}\\chromedriver.exe";
+                    new DriverManager().SetUpDriver(cconfig, VersionResolveStrategy.MatchingBrowser);
+                    
+                    //if (File.Exists(FileHelper.GetZipDestination(UrlHelper.BuildUrl((ArchitectureHelper.GetArchitecture().Equals(WebDriverManager.Helpers.Architecture.X32) ? cconfig.GetUrl32 : cconfig.GetUrl64 ), ))))
+
+
+                    var isExists = File.Exists(DriverPath);
+                    if (!isExists){
+                        tB_Teilnehmer.Text = "File not found!";
+                        tB_Teilnehmer.Refresh();
+                        return; 
+                        //Thread.Sleep(10000);
+                    }
 
                     var chromeOptions = new ChromeOptions();
-                    
+
                     chromeOptions.AddArguments("--browser.download.folderList=2");
                     chromeOptions.AddArguments("--browser.helperApps.neverAsk.saveToDisk=text/csv");
                     chromeOptions.AddArguments("--browser.download.dir=" + downloadDirectory);
@@ -85,12 +111,39 @@ namespace MöbiusErgebnisDownload
                     chromeOptions.AddUserProfilePreference("download.prompt_for_download", "false");
                     chromeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
                     chromeOptions.AddUserProfilePreference("plugins.plugins_disabled", new[] { "Chrome PDF Viewer" });
+
+                    tB_Teilnehmer.Text = "setting up done. starting browser...";
+                    tB_Teilnehmer.Refresh();
+
+                    Thread.Sleep(1000);
+
                     driver = new ChromeDriver(chromeOptions);
 
                     break;
 
+                //case "firefox":
+                //    new DriverManager().SetUpDriver(new FirefoxConfig());
+
+                //    var firefoxOptions = new FirefoxOptions();
+
+                //    firefoxOptions.AddArguments("--browser.download.folderList=2");
+                //    firefoxOptions.AddArguments("--browser.helperApps.neverAsk.saveToDisk=text/csv");
+                //    firefoxOptions.AddArguments("browser.download.dir", downloadDirectory);
+                //    firefoxOptions.SetPreference("download.prompt_for_download", "false");
+                //    driver = new FirefoxDriver(firefoxOptions);
+
+                //    break;
+
                 default:
-                    new DriverManager().SetUpDriver(new EdgeConfig());
+                    var econfig = new EdgeConfig();
+                    new DriverManager().SetUpDriver(econfig, VersionResolveStrategy.MatchingBrowser );
+                    //new DriverManager().SetUpDriver("www.google.com", @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe");
+
+                    //DriverPath = $"{Directory.GetCurrentDirectory()}\\{econfig.GetName()}\\{econfig.GetMatchingBrowserVersion()}\\{ArchitectureHelper.GetArchitecture()}";
+                    //tB_Teilnehmer.Text = DriverPath;
+                    //tB_Teilnehmer.Refresh();
+
+                    //Environment.SetEnvironmentVariable("PATH", $"{oldval}; {DriverPath}", EnvironmentVariableTarget.Machine);
 
                     var edgeOptions = new EdgeOptions();
 
@@ -100,6 +153,12 @@ namespace MöbiusErgebnisDownload
                     edgeOptions.AddUserProfilePreference("profile.default_content_settings.popups", 0);
                     edgeOptions.AddUserProfilePreference("download.prompt_for_download", "false");
                     edgeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
+
+                    tB_Teilnehmer.Text = "setting up done. starting browser...";
+                    tB_Teilnehmer.Refresh();
+
+                    Thread.Sleep(1000);
+
                     driver = new EdgeDriver(edgeOptions);
 
                     break;
@@ -113,6 +172,8 @@ namespace MöbiusErgebnisDownload
         private void B_StartWebBrowser_Click(object sender, EventArgs e)
         {
             SetupDrivers();
+
+            //driver = new ChromeDriver();
 
             driver.Manage().Window.Position = new System.Drawing.Point(50, 50);
             driver.Manage().Window.Size = new System.Drawing.Size(1080*4/3, 1 * 1080);
@@ -156,13 +217,16 @@ namespace MöbiusErgebnisDownload
                 b_Download.Enabled = true;
                 driverOpen = true;
             }
-
-
         }
 
         private void MobiusDownladExams_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (driverOpen) {
+
+                //var val = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Machine);
+                //val = val.Replace(DriverPath, "");
+                //Environment.SetEnvironmentVariable("PATH", val, EnvironmentVariableTarget.Machine);
+
                 driver.Close();
                 driver.Dispose();
             }
@@ -255,8 +319,8 @@ namespace MöbiusErgebnisDownload
                         //.GetAttribute("href").Split('\'')[3];
                         // userIds.Add(element.FindElement(By.CssSelector("td[class*='top userInfo']")).Text + ";" + text);
 
+                        driver.FindElement(By.CssSelector("#gradeContent"));
                         Download("dummy");
-
 
                         Thread.Sleep(20);
                         Debug.WriteLine("Back");
@@ -309,7 +373,7 @@ namespace MöbiusErgebnisDownload
 
             // string userId = gradeId.Split(';')[0];
             // string gradeUrl = gradeId.Split(';')[1];
-            Thread.Sleep(500);
+            // Thread.Sleep(500);
             // driver.Navigate().GoToUrl(gradeUrl);
             try {
                 driver.ExecuteScript("refresh('csv')");
@@ -422,7 +486,7 @@ namespace MöbiusErgebnisDownload
                 {
                     b_StartWebBrowser.Enabled = true;
                     Merge.Enabled = true;
-                    this.TopMost = true; ;
+                    //this.TopMost = true; ;
                 }
 
             }

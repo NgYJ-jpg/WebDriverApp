@@ -219,6 +219,5 @@ C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\Möbi
 C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CoreCompileInputs.cache
 C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe.manifest
 C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.application
-C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.csproj.CopyComplete
 C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.exe
 C:\Users\founder4116\Documents\MobiusCSV\MöbiusErgebnisDownload\obj\Debug\MöbiusErgebnisDownload.pdb

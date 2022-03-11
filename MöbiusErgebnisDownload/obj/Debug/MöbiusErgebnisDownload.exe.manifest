@@ -378,14 +378,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="7839744">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebDriver.dll" size="7857664">
       <assemblyIdentity name="WebDriver" version="4.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bDjHA/9Kxk/83wz6fM/VFUeoclVwrKmBkAzP3jlBfvc=</dsig:DigestValue>
+        <dsig:DigestValue>Vdk4Y3igRreQ1d63IC0g7SQ+BCLanFm5uPLIJZm4ZsE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -401,13 +401,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="chromedriver.exe" size="11275264">
+  <file name="chromedriver.exe" size="11837440">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>POtZdsCBPkZWeRdHRt8eYDsWjT1vpx9T+gXw1euOCA0=</dsig:DigestValue>
+      <dsig:DigestValue>hYhRuvLkMhXBMismfWuA0B1e3S9RNjAD9GVJgA2z/Ow=</dsig:DigestValue>
     </hash>
   </file>
   <file name="MöbiusErgebnisDownload.exe.config" size="565">
