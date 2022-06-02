@@ -74,7 +74,7 @@ namespace MöbiusErgebnisDownload
             string browserChoice = GetDefaultBrowser();
             var downloadDirectory = oFD_Teilnehmer.SelectedPath;
 
-            tB_Teilnehmer.Text = "setting up...";
+            tB_Teilnehmer.Text = "環境設定中...";
             tB_Teilnehmer.Refresh();
 
             //var oldval = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Machine);
@@ -96,7 +96,7 @@ namespace MöbiusErgebnisDownload
 
                     var isExists = File.Exists(DriverPath);
                     if (!isExists){
-                        tB_Teilnehmer.Text = "File not found!";
+                        tB_Teilnehmer.Text = "初期化失敗、もう一度やり直してください。";
                         tB_Teilnehmer.Refresh();
                         return; 
                         //Thread.Sleep(10000);
@@ -112,10 +112,10 @@ namespace MöbiusErgebnisDownload
                     chromeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
                     chromeOptions.AddUserProfilePreference("plugins.plugins_disabled", new[] { "Chrome PDF Viewer" });
 
-                    tB_Teilnehmer.Text = "setting up done. starting browser...";
+                    tB_Teilnehmer.Text = "設定完了。ブラウザー起動中...";
                     tB_Teilnehmer.Refresh();
 
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(1000);
 
                     driver = new ChromeDriver(chromeOptions);
 
@@ -154,10 +154,10 @@ namespace MöbiusErgebnisDownload
                     edgeOptions.AddUserProfilePreference("download.prompt_for_download", "false");
                     edgeOptions.AddUserProfilePreference("download.default_directory", downloadDirectory);
 
-                    tB_Teilnehmer.Text = "setting up done. starting browser...";
+                    tB_Teilnehmer.Text = "設定完了。ブラウザー起動中...";
                     tB_Teilnehmer.Refresh();
 
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(1000);
 
                     driver = new EdgeDriver(edgeOptions);
 
@@ -180,7 +180,7 @@ namespace MöbiusErgebnisDownload
             //driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
 
-            driver.Navigate().GoToUrl("https://evaluation.mobius.cloud/login");
+            driver.Navigate().GoToUrl("https://hc-nozomi.mobius.cloud/login");
 
             // Zu Testzwecken in folgenden Zeilen Kommentarzeichen entfernen und auf aktuelle Gegebenheiten anpassen
 
@@ -226,9 +226,14 @@ namespace MöbiusErgebnisDownload
                 //var val = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Machine);
                 //val = val.Replace(DriverPath, "");
                 //Environment.SetEnvironmentVariable("PATH", val, EnvironmentVariableTarget.Machine);
-
-                driver.Close();
-                driver.Dispose();
+                try {
+                    driver.Close();
+                    driver.Dispose();
+                }
+                catch
+                {
+                    return;
+                }
             }
 
             return;
@@ -310,7 +315,7 @@ namespace MöbiusErgebnisDownload
                     try
                     {
                         counter++;
-                        tB_Status.Text = "Downloading - " + counter + "/" + elements.Count();
+                        tB_Status.Text = "ダウンロード中 - " + counter + "/" + elements.Count();
                         tB_Status.Refresh();
                         // string text = "https:/evaluation.mobius.cloud/gradebook/Details.do?" +
                         IWebElement aLink = element.FindElement(By.CssSelector("a[class='grade']"));
@@ -334,7 +339,7 @@ namespace MöbiusErgebnisDownload
                     }
                 }
             }
-            tB_Status.Text = "Download complete. ";
+            tB_Status.Text = "ダウンロード完了。";
             tB_Status.Refresh();
 
             NameClassDict = usedKeys;
@@ -344,7 +349,7 @@ namespace MöbiusErgebnisDownload
         {
             try
             {
-                Thread.Sleep(100);
+                //Thread.Sleep(100);
                 element.Click();
                 return;
             }
@@ -422,7 +427,7 @@ namespace MöbiusErgebnisDownload
 
             if (csvList.Count == 0)
             {
-                MessageBox.Show("フォルダーにCSVファイルがありません。ファイルパス変更して改めてやり直してください。");
+                MessageBox.Show("フォルダーにCSVファイルがありません。ファイルパス変更し, やり直してください。");
                 return;
             }
 
@@ -436,7 +441,7 @@ namespace MöbiusErgebnisDownload
                 tB_Status.Refresh();
 
                 StreamWriter result = new StreamWriter(resPath, false, Encoding.UTF8);
-                result.WriteLine(String.Format("クラスID, レポートID, {0}", firstLine.Substring(3)));
+                result.WriteLine(String.Format("レポートID, クラスID, {0}", firstLine.Substring(3)));
                 foreach (string item in csvList){
                     Debug.WriteLine(item);
                     lines = File.ReadAllLines(item);
@@ -460,7 +465,7 @@ namespace MöbiusErgebnisDownload
             }
             else {
                 Debug.WriteLine("Deleting File.");
-                tB_Status.Text = "result.csv もう存在します。例のファイルを削除します ...";
+                tB_Status.Text = "result.csv もう存在します。例のファイルを削除しています ...";
                 tB_Status.Refresh();
                 Task t = Task.Run( () => {
 
